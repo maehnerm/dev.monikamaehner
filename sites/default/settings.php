@@ -714,19 +714,6 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
-$databases['default']['default'] = array (
-  'database' => 'db644519459',
-  'username' => 'dbo644519459',
-  'password' => 'falscheFlasche',
-  'prefix' => 'cem5_',
-  'host' => 'db644519459.db.1and1.com',
-  'port' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['install_profile'] = 'standard';
-$base_url = 'http://lebensraum-in-harmonie.de';
-$config_directories['sync'] = 'sites/default/files/config_dkDUT_r1lCybb8_RdlexN83aRZy6tSEbWii4pnY6zPbi_ZEwtUTVMpYUflBHv6zRLPQyTAoJbw/sync';
+if (file_exists(__DIR__ . '/settings.local.php')) {
+   include __DIR__ . '/settings.local.php';
+}
